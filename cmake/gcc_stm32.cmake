@@ -51,8 +51,8 @@ SET(CMAKE_CXX_FLAGS_DEBUG "-Og -g" CACHE STRING "cxx compiler flags debug")
 SET(CMAKE_ASM_FLAGS_DEBUG "-g" CACHE STRING "asm compiler flags debug")
 SET(CMAKE_EXE_LINKER_FLAGS_DEBUG "" CACHE STRING "linker flags debug")
 
-SET(CMAKE_C_FLAGS_RELEASE "-Os -flto" CACHE STRING "c compiler flags release")
-SET(CMAKE_CXX_FLAGS_RELEASE "-Os -flto" CACHE STRING "cxx compiler flags release")
+SET(CMAKE_C_FLAGS_RELEASE "-Os -flto -ffat-lto-objects -DNDEBUG" CACHE STRING "c compiler flags release")
+SET(CMAKE_CXX_FLAGS_RELEASE "-Os -flto -ffat-lto-objects -DNDEBUG" CACHE STRING "cxx compiler flags release")
 SET(CMAKE_ASM_FLAGS_RELEASE "" CACHE STRING "asm compiler flags release")
 SET(CMAKE_EXE_LINKER_FLAGS_RELEASE "-flto" CACHE STRING "linker flags release")
 
